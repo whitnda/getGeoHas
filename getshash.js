@@ -1,4 +1,4 @@
-import { geoHash as geoHash } from "https://cdn.jsdelivr.net/npm/latlon-geohash@2.0.0";
+    const lib = require('https://cdn.jsdelivr.net/npm/latlon-geohash@2.0.0');
 
 
 var hs = window.location.hash;
