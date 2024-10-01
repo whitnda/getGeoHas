@@ -17,8 +17,8 @@ console.log(hs)
     var gh = Geohash.encode(st[0].substring(1, 100),st[1],9);
     console.log(gh);
     var jsonVar = {
-        text: gh,
-        number: 1
+        geohash: gh,
+        
     };
      var jsonStr = JSON.stringify(jsonVar);
      document.body.innerHTML = jsonStr;
