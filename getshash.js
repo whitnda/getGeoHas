@@ -1,4 +1,3 @@
- import Geohash from 'https://cdn.jsdelivr.net/npm/latlon-geohash@2.0.0';
 
 
 var hs = window.location.hash;
