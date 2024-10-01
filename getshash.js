@@ -1,4 +1,7 @@
- var hs = window.location.hash;
+ import Geohash from 'https://cdn.jsdelivr.net/npm/latlon-geohash@2.0.0';
+
+
+var hs = window.location.hash;
 
  if (hs) {
     const st = hs.split(":");
