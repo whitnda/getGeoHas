@@ -1,4 +1,3 @@
-import * as Geohash from 'https://cdn.jsdelivr.net/npm/latlon-geohash@2.0.0';
 
 
 
