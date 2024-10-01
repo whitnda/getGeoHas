@@ -1,13 +1,13 @@
 <!doctype html><title>geohash example</title><meta charset="utf-8">
 <head>
 <script type="module">
-    import Geohash from 'https://cdn.jsdelivr.net/npm/latlon-geohash@2.0.0';
- var hs = window.location.hash 
+ import Geohash from 'https://cdn.jsdelivr.net/npm/latlon-geohash@2.0.0';
+ var hs = window.location.hash;
 
  if (hs) {
     const st = hs.split(":");
-    console.log(st[0].substring(2, 100))
-    console.log(st[1])
+    console.log(st[0].substring(2, 100));
+    console.log(st[1]);
     
     var gh = Geohash.encode(st[0].substring(2, 100),st[1],9);
     console.log(gh);
