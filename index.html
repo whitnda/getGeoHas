@@ -1,35 +1,35 @@
-<!doctype html><title>geohash example</title><meta charset="utf-8">
+<!doctype html>
+<meta charset="utf-8">
 <head>
+    <meta charset="utf-8">
+    <meta name="color-scheme" content="light dark">
 <script type="module">
     import Geohash from 'https://cdn.jsdelivr.net/npm/latlon-geohash@2.0.0';
- 
-    /* const geohash = Geohash.encode(52.20, 0.12, 6);
-   console.assert(geohash == 'u120fw');
-*/
-
-var hs = window.location.hash;
-console.log(hs)
- if (hs) {
-    const st = hs.split(":");
-    console.log(st[0].substring(1, 100));
-    console.log(st[1]);
+    var hs = window.location.hash;
+    console.log(hs)
+    if (hs) {
+       const st = hs.split(":");
+       console.log(st[0].substring(1, 100));
+       console.log(st[1]);
     
-    var gh = Geohash.encode(st[0].substring(1, 100),st[1],9);
-    console.log(gh);
-    var jsonVar = {
-        geohash: gh,
-        
-    };
-     var jsonStr = JSON.stringify(jsonVar);
-     document.body.innerHTML = jsonStr;
+        var gh = Geohash.encode(st[0].substring(1, 100),st[1],9);
+        var jsonVar = {
+            geohash: gh,
+        };
+         var jsonStr = JSON.stringify(jsonVar);
+         document.pre.innerHTML = jsonStr;
 
  
  }
 else {
-    console.log("It is null");
 }
-console.log(gh);
 </script>
 </head>
 <body>
+    <pre>
+        
+    </pre>
+    <div class="json-formatter-container">
+        
+    </div>
 </body>
