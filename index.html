@@ -16,8 +16,15 @@ console.log(hs)
     
     var gh = Geohash.encode(st[0].substring(1, 100),st[1],9);
     console.log(gh);
-    document.getElementById('hash').innerHTML = gh;
-}
+    var jsonVar = {
+        text: gh,
+        number: 1
+    };
+     var jsonStr = JSON.stringify(jsonVar);
+     document.body.innerHTML = jsonStr;
+
+ 
+ }
 else {
     console.log("It is null");
 }
@@ -25,5 +32,4 @@ console.log(gh);
 </script>
 </head>
 <body>
-<p id="hash"></p>
 </body>
