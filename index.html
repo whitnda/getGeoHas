@@ -1,7 +1,11 @@
 <!doctype html><title>geohash example</title><meta charset="utf-8">
 <head>
-<!doctype html><title>geohash example</title><meta charset="utf-8">
-
+<script type="module">
+    import Geohash from 'https://cdn.jsdelivr.net/npm/latlon-geohash@2.0.0';
+ 
+    const geohash = Geohash.encode(52.20, 0.12, 6);
+    console.assert(geohash == 'u120fw');
+</script>
 <script src="getshash.js"></script>
 
 </head>
